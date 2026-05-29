@@ -28,8 +28,34 @@ To implement HASH ALGORITHM
 
 ## Program:
 
+```
+#include <stdio.h>
+#include <string.h>
 
+int main() {
+    char message[100];
+    int i, hash = 0;
+
+    // Input message
+    printf("Enter the message: ");
+    fgets(message, sizeof(message), stdin);
+
+    // Simple hash calculation
+    for(i = 0; i < strlen(message); i++) {
+        hash = hash + message[i];
+    }
+
+    // Display hash value
+    printf("Hash Value: %d\n", hash);
+
+    return 0;
+}
+
+
+```
 ## Output:
+<img width="940" height="588" alt="image" src="https://github.com/user-attachments/assets/0dcd7967-7ce3-4c1e-a6f3-ee0df7d52e23" />
+
 
 ## Result:
 The program is executed successfully.
